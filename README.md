@@ -13,7 +13,7 @@
   - Yue: specify which page you're working on and link it here.
   - Averie:
   - Bella:
-- Functionality (optional assignment)
+- Functionality
   - Drop-down menu for notifications, messages, and profile
-  - Can save an image and it displays on profile page (doesn' need to be in a board)
+  - Can save an image and it displays on profile page (doesn't need to be in a board)
   - Scrollable feed on home page
