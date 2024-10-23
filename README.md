@@ -14,7 +14,7 @@
   - Averie: saved pins
   - Bella: page info
 - Functionality
-  -saved folders will be displayed, where preview of multiple saved pins will be merged into a box, and the users can access their folder from here.
+  -saved folders will be displayed, where preview of multiple saved pins will be merged into a box, and the users can access their folder from here. Below the folders, it will display all the images the user saved using a scroll feed. 
   -after entering a folder from the user profile page, display all saved pins with a scrolling feed.
   -In the page info page, it displays the pin in full size and allows the user to save it to their created folders.  Dropdowns of notifications will happen and says the pin is successfully saved.
 
