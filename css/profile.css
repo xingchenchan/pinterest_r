@@ -1,0 +1,97 @@
+body{
+    --color-gray-roboflow-200: #e9e9e9;
+    /* font-family: "Noto Sans", sans-serif;font not working */
+    
+}
+
+
+li{
+    list-style:none;
+}
+
+header #userinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    margin-top:2rem;
+    gap:0.005 rem;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: horizontal;
+    align-items: center;
+}
+
+header section h1, header section p{
+    font-family: 
+}
+    
+#username{
+    font-size: 2.5rem;
+}
+
+
+#userid{
+    opacity: 0.8;
+    /* cannot make this line low opacity */
+}
+#pfp
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+#search section{
+    background-color:gray;
+    border-radius: 5%;
+}
+
+#search section input{
+    width: 80rem;
+    height: 2.5rem;
+    background-color:transparent;
+    border-color:transparent;
+}
+
+#left_bar section{
+    border-right: 1px solid;
+    border-color: var(--color-gray-roboflow-200);
+    position:absolute;
+    display: flex;
+    width: 4.5rem;
+    height: 100%;
+}
+
+#left_bar section ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -2.5rem;
+    gap:4.5rem;
+
+}
+
+#left_bar section ul #setting{
+    display: flex;
+    align-items: flex-end;
+}
+
+#gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 11rem;
+    margin-right: 1rem;
+    margin-top: 20rem;
+}
+
