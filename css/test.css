@@ -1,0 +1,9 @@
+a {
+    background-color: powderblue;
+    transition: background-color 0.5s;
+}
+
+
+a: hover {
+    color: green;
+}
