@@ -117,3 +117,12 @@ button.button {
     box-shadow: 0 2px 4px darkslategray;
     border-radius: 50%;
 }
+
+/* Feed */
+#feed img{
+    border-radius: 25px;
+    padding: 20px;
+    width: 200 px;
+    height: 150px;
+    border: none;
+}
