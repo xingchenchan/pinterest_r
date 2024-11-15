@@ -1,0 +1,277 @@
+
+header input {
+    align-self: center;
+    width: 50rem;
+    height: 2rem;
+    border-radius: 10rem;
+    margin-left: 25px;
+    
+}
+
+img.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.2em;
+    color: #E60023;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-icons ul{
+     display: flex;
+    list-style: none;
+    gap: 16px;
+  }
+  
+  
+  .search-bar {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    
+  }
+  
+
+
+
+  
+  /* Main Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Pin Image Section */
+  .pin-image-section {
+    flex: 2;
+    position: relative;
+  }
+  
+  .pin-image {
+    margin-left: 10rem;
+    width: 75%;
+    border-radius: 8px;
+  }
+  
+  /* .pin-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    color: white;
+  } */
+  
+  /* Pin Info Section */
+  .pin-info-section {
+    flex: 1;
+    padding: 20px;
+    
+  }
+  
+  /* .save-button {
+    background-color: #E60023;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+  } */
+  
+
+  
+  /* User Info */
+  /* .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  .follow-button {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #efefef;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+   */
+  /* Shop the Look */
+  .shop-the-look {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .shop-the-look .item {
+    width: 60px;
+    text-align: center;
+  }
+  
+  .shop-the-look img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  /* Comments Section */
+  .comments-section {
+    margin-top: 20px;
+  }
+  
+  .comment-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .comment-box input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+
+
+
+
+
+/* Action Icons */
+.action-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* .action-icons .icon {
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+   */
+  .category-dropdown {
+    border: none;
+    background: none;
+    font-size: 1em;
+    margin-left: 5px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    background-color: #E60023;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    font-weight: bold;
+    
+  }
+  
+  /* User Info */
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  .follow-button {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  /* Note to Self Section */
+  .note-to-self {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .note-to-self p {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .add-note-button {
+    margin-left: auto;
+    padding: 5px 15px;
+    background-color: #eee;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+  }
+  
