@@ -119,9 +119,15 @@ button.button {
 }
 
 /* Feed */
-#feed img{
-    border-radius: 25px;
+#feed a img{
+    border-radius: 30px;
     padding: 20px;
-    height: 150px;
     border: none;
+    top: 0px;
+    left: 0px;
+    min-height: 120px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+    opacity: 1;
 }
