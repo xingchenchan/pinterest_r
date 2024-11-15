@@ -2,7 +2,7 @@ body{
     --color-gray-roboflow-100: #f1f1f1;
     --color-gray-roboflow-200: #e9e9e9;
     --color-text-default: #111111;
-    /* font-family: "Noto Sans", sans-serif;font not working */
+    font-family: "Noto Sans", sans-serif;
     
 }
 
@@ -15,9 +15,8 @@ p, h1{
     color: var(--color-text-default);
 }
 
-#username{
-    margin-top:1rem;
-    margin-bottom:0.5rem;
+hedaer{
+    height:50%;
 }
 
 header #userinfo {
@@ -26,14 +25,16 @@ header #userinfo {
     flex-direction:column;
     align-items: center;
     margin-top:2rem;
-    gap:0.0005px;
+    /* gap:0.0005px; */
+    gap:0.2rem;
 }
 
 #follow{
-    margin-top: 0.1rem;
+    position:relative;
+    bottom:2.8rem;
     margin-bottom:0.1rem;
-    font-weight:bold;
-    font-size:1.3rem;
+    font-size:1.1rem;
+    font-weight: 550;
 
 }
 
@@ -42,16 +43,19 @@ header ul{
     justify-content: center;
     flex-direction: horizontal;
     align-items: center;
+    position:relative;
+    bottom:3rem;
     gap: 1rem;
 }
 
 header ul button{
     width: 5.5rem;
-    height: 3rem;
-    border-radius: 45%;
+    height: 3.5rem;
+    border-radius: 2rem;
     border-color: none;
     font-size: 1rem;
-    margin-top:0.2rem;
+    font-weight: 550;
+    /* margin-top:0.2rem; */
     border-color: transparent;
 
 }
@@ -60,26 +64,21 @@ header ul button{
     width:7rem;
 }
 
-header section h1, header section p{
-    font-family: 
-}
-    
-#username{
-    font-size: 2.5rem;
-}
-
 
 #userid{
-    opacity: 0.8;
-    /* cannot make this line low opacity */
+    position:relative;
+    bottom: 2rem;
+    margin-bottom:0.1rem;
+    font-size:1rem;
+
 }
 
 #pfp
 {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
-    margin-bottom:0.2rem;
+    /* margin-bottom:0.2rem; */
 }
 
 #search{
@@ -128,6 +127,16 @@ header section h1, header section p{
     margin-left:50rem;
     /* margin-left:2rem; Doesn't work because these are hindering the search box, should I just use java?*/ 
 
+h1{
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 1rem;
+    font-weight:500;
+    position: relative;
+    margin-top: 1.7rem;
+    margin-bottom: 0.4rem;
+}
+
 #search div{
     display:flex;
     margin-right:-2rem;
@@ -161,7 +170,8 @@ header section h1, header section p{
     display: flex;
     width: 4.5rem;
     height: 100%;
-    margin-right:0.5rem;
+
+    /* margin-right:0.5rem; */
     /* absolute size doesn't work */
 }
 
@@ -188,26 +198,47 @@ header section h1, header section p{
 #folders{
     display: flex;
     justify-content: center;
+    margin-top:0;
+    position:relative;
+    bottom:1rem;
 }
 
-#folders ul{
+#folders div ul{
     display: flex;
-    flex-direction: horizontal;
-    
+    gap:40rem;
+    position: relative;
+    bottom: 2rem;
 }
+
+#folders div ul li{
+    display: flex;
+    gap:40rem;
+}
+
 
 #folders ul li button{
     background-color:transparent;
     border-color: transparent;
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 1000;
+    border-bottom-right-radius:1000 ;
+    border-bottom-color: var(--color-text-default);
+    height:3.5rem;
+    width:4rem;
 }
 
 #question{
-    width:4.5rem;
-    height:4.5rem;
-    position:absolute;
+    position: fixed;
+    top: 90%;
+    right:2rem;
+    width: 200px;
+    height: 100px;
+    width:4.3rem;
+    height:4.3rem;
     border-radius:50%;
     margin-left:50rem;
     background-color:white;
+    /* How to do shadow blur? */
 }
 
 #folders{
