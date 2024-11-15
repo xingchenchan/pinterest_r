@@ -65,10 +65,10 @@ main nav ul {
 }
 
 .dropdown button{
-    background-color: hsl(0, 0%, 80%);
-    color: white;
+    background-color: transparent;
+    color: black;
     padding: 10px 15px;
-    border: none;
+    border: 1px grey;
     cursor: pointer;
 }
 
@@ -78,6 +78,7 @@ main nav ul {
     text-decoration: none;
     padding: 10px 15px;
 }
+
 .dropdown .content{
     display: none;
     position: absolute;
@@ -85,12 +86,15 @@ main nav ul {
     min-width: 100px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
+
 .dropdown:hover .content{
     display: block;
 }
+
 .dropdown:hover button{
     background-color: hsl(0, 0%, 70%);
 }
+
 .dropdown a:hover{
     background-color: hsl(0, 0%, 90%);
 }
