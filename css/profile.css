@@ -7,6 +7,23 @@ body{
     
 }
 
+#yours{
+    width:8rem;
+    border-color:transparent;
+    background-color:transparent;
+    border-left:3px solid;
+    border-left-color:var(--color-gray-roboflow-200);
+    font-weight:600;
+    font-size:15px;
+}
+
+#drop1b{
+    border-color:transparent;
+    background-color:transparent;
+    position:relative;
+    right:1rem;
+}
+
 li{
     list-style:none;
 }
@@ -134,7 +151,8 @@ header ul button{
     width:100rem;
     left:5.5rem;
     right:2rem;
-    background-color:red;
+    z-index:10;
+    background-color:white;
     
 }
 
@@ -156,11 +174,43 @@ header ul button{
     width:8rem;
     position:fixed;
     left:90rem;
-    bottom:54rem;
+    bottom:53rem;
     border:5px solid;
-    border-color:black;
+    height:3rem;
+    border-color:transparent;
 }
 
+#sub{
+    display:flex;
+    height:4rem;
+    top:1.5rem;
+    position:relative;
+    left:47rem;
+    width:7rem;
+    background-color:blue;
+}
+
+#pfp2i{
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    position:relative;
+    top:0.5rem;
+    border-color:var(--color-text-default);
+    background-color:transparent;
+    z-index:20;
+}
+
+#pfp2{
+    overflow:hidden;
+    width:2.8rem;
+    height:2.8rem;
+    border-radius:50%;
+    position:relative;
+    right:0.4rem;
+    bottom:0.1rem;
+
+}
 
 
 #search section input{
@@ -172,15 +222,19 @@ header ul button{
     
 }
 
-#search section svg{
+#si{
     position:relative;
     right:80.5rem;
     top:0.5rem;
-    overflow:visible;
     height:1.1rem;
     width:1.1rem;
     
 } 
+
+#drop2{
+    position:relative;
+
+}
 
 #search section a{
     position: relative;
@@ -195,9 +249,9 @@ header ul button{
     position: relative;
     height:5rem;
     width:0.5rem;
-    left:4rem;
-    background-color:red;
-    width:99%;
+    left:4.5rem;
+    width:96%;
+    z-index:8;
     overflow:hidden;
 }
 
@@ -296,11 +350,6 @@ header ul button{
     border-radius:1rem;
     margin-left:-4rem;
     margin-top: 5rem;
-}
-
-#pfp2{
-    height:1rem;
-    width:1rem;
 }
 
 #saves div{
