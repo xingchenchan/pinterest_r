@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css\savedpins.css">
 </head>
 
@@ -11,6 +12,7 @@
     <header>
         <nav>
             <ul>
+                <i class="fa-brands fa-pinterest"></i>
                 <li><a href = "#">Home</a></li>
                 <li><a href = "#">Explore</a></li>
                 <li><a href="#">Create</a></li> 
@@ -21,13 +23,8 @@
         
         <!-- Searchbar -->
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#explore">Explore</a>
-            <a href="#create">Create</a>
             <input type="text">
-        </div>
-    
-        <!-- Dropdown -->
+            <!-- Dropdown -->
         <div class="dropdown">
             <button>Icon</button>
             <div class="content">
@@ -35,12 +32,13 @@
                 <a href= "">Your Pins</a>
             </div>
         </div>
+        </div>
     
         <nav>
             <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Your Profile</a></li>
+                <li><a href="#"><i class="fa-duotone fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
+                <li><a href="#"><img src="assets\pfp.png" alt="Your Profile" class="profile"></a></li>
             </ul>
         </nav>
     </header>
@@ -48,12 +46,15 @@
     <main>
         <h2>All Pins</h2>
 
-        <nav>
-            <ul>
-                <li><a href="#">Filters</a></li>
-                <li><a href="#">Create</a></li>
-            </ul>
-        </nav>
+        <labeL>
+            <div class="slide">
+                <h1>View Options</h1>
+                <ul>
+                    <li><a href="#">Standard</a></li>
+                    <li><a href="#">Compact</a></li>
+                </ul>
+            </div>
+        </labeL>
 
         <!-- Content of Saved Pins -->
         <article>
