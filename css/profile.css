@@ -156,6 +156,12 @@ header ul button{
     
 }
 
+#left_bar button{
+    background-color:transparent;
+    border-color:transparent;
+
+}
+
 #search section{
     background-color:var(--color-gray-roboflow-100);
     border-radius: 0.6rem;
@@ -185,9 +191,9 @@ header ul button{
     height:4rem;
     top:1.5rem;
     position:relative;
-    left:47rem;
+    left:48rem;
     width:7rem;
-    background-color:blue;
+    background-color:transparent;
 }
 
 #pfp2i{
@@ -210,6 +216,11 @@ header ul button{
     right:0.4rem;
     bottom:0.1rem;
 
+}
+
+#sub button{
+    background-color:transparent;
+    border-color:transparent;
 }
 
 
@@ -275,6 +286,7 @@ header ul button{
     border-bottom-color: var(--color-text-default);
     height:3.5rem;
     width:4rem;
+    font-weight:600;
 }
 
 #question{
@@ -288,6 +300,9 @@ header ul button{
     border-radius:50%;
     margin-left:50rem;
     background-color:white;
+    z-index:9;
+    box-shadow: 0 0 8px 4px var(--color-gray-roboflow-200);
+    border-color:transparent;
     /* How to do shadow blur? */
 }
 
@@ -376,4 +391,24 @@ header ul button{
     display: flex;
     justify-content:space-between;
     margin-left: 6rem;
+    position:relative;
+    top:1rem;
+}
+
+#gallery p{
+    font-weight:600;
+    font-size:20px;
+    margin-top:0;
+}
+
+#gallery button{
+    position:relative;
+    right:1rem;
+    border-radius:2rem;
+    font-size:18px;
+    width:7rem;
+    height:3rem;
+    border-color:transparent;
+    font-weight:600;
+
 }
