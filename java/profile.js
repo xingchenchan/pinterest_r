@@ -1,4 +1,5 @@
 var gray200="#e9e9e9"
+var gray100 ="#f1f1f1"
 
 function buttonclick(){
     console.log("button was clicked")
@@ -32,4 +33,21 @@ function divclick(){
     return 
 
 }
+
+function inputclick(){
+    console.log("input was clicked")
+    const div = document.querySelector('input')
+    div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = gray200
+    })
+
+    div.addEventListener('mouseleave', () => {
+        div.style.backgroundColor = gray100
+    })
+    console.log("finished")
+
+    return 
+}
+
+
 
