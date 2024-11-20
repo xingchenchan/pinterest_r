@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="savedpinscss/savedpins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" type="text/css" href="css\savedpins.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
+                <i class="fa-brands fa-pinterest"></i>
                 <li><a href = "#">Home</a></li>
                 <li><a href = "#">Explore</a></li>
                 <li><a href="#">Create</a></li> 
@@ -20,54 +23,47 @@
         
         
         <!-- Searchbar -->
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#explore">Explore</a>
-            <a href="#create">Create</a>
-            <input type="text">
-        </div>
-    
+        <form>
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input class="search-input" type="search" placeholder="Search your pins">
+            </div>
+        </form>
+
         <!-- Dropdown -->
         <div class="dropdown">
-            <button>Icon</button>
-            <div class="content">
-                <a href = "">All Pins</a>
-                <a href= "">Your Pins</a>
-            </div>
+            <button>Filter</button>
+        <div class="content">
+            <a href = "">All Pins</a>
+            <a href= "">Your Pins</a>
+        </div>
         </div>
     
         <nav>
             <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Your Profile</a></li>
+                <li><a href="#"><i class="fa-duotone fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
+                <li><a href="#"><img src="assets\pfp.png" alt="Your Profile" class="profile"></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>All Pins</h2>
-
-        <nav>
-            <ul>
-                <li><a href="#">Filters</a></li>
-                <li><a href="#">Create</a></li>
-            </ul>
-        </nav>
+        <h1>All Pins</h1>
 
         <!-- Content of Saved Pins -->
-        <article>
-            <img src="">
-            <video></video>
-        </article>
+         <article id="feed">
+            <a href ="" target="_blank"><img src="images\d1846c0f052578b326b224006d7b4f3e.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 106.356%; width: 236px; height: 265px"></a>
+            <a href="" target="_blank"><img src="images\Death Is Easy, Life Is Hard - 24~ I'm Here.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 102.542%; width: 236px; height: 242px"></a>
+            <a href="" target="_blank"><img src="images\The Best Memes About 2020.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 102.452%; width: 236px; height: 290px"></a>
+            <a href="" target="_blank"><img src="images\Why is this so relatable.jpg" fetchpriority="auto" loading="auto" style="width: 236px; height: 235px; padding-bottom: 99.5763%"></a>
+            <a href="" target="_blank"><img src="images\186e6bf3d8c8f85bdad7c18928826f43.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 106.356%; width: 236px; height: 251px"></a>
+         </article>
     
-        <button type="button">More</button>
-
-        <nav>
-            <scrollbar>
-                
-            </scrollbar>
-        </nav>
+        <!-- More button -->
+        <button class="button">
+            <i class="fa-solid fa-question"></i>
+        </button>
     </main>
 </body>
 </html>
