@@ -7,6 +7,11 @@ body{
     
 }
 
+#filter2{
+    background-color:transparent;
+    border-color:transparent;
+}
+
 #yours{
     width:8rem;
     border-color:transparent;
@@ -128,11 +133,6 @@ header ul button{
 
 }
 
-#left_bar section ul button{
-    height:2.8rem;
-    width:2.8rem;
-}
-
 #set
 {
     position:relative;
@@ -159,8 +159,14 @@ header ul button{
 #left_bar button{
     background-color:transparent;
     border-color:transparent;
+    height:2.8rem;
+    width:2.8rem;
     border-radius:0.5rem;
 
+}
+
+#left_bar button:hover{
+    background-color:var(--color-gray-roboflow-200) !important;
 }
 
 #search section{
@@ -225,7 +231,7 @@ header ul button{
 }
 
 
-#search section input{
+input{
     position:relative;
     width: 81rem;
     height:3rem;
@@ -233,6 +239,12 @@ header ul button{
     background-color:transparent;
     
 }
+
+input:hover{
+    background-color:red;
+}
+
+input:
 
 #si{
     position:relative;
