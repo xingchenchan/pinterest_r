@@ -8,10 +8,6 @@ app.get('/', (c) => {
   return c.text('Hello Hono!')
 })
 
-app.use('/*', serveStatic({
-  root: './static',
-}))
-
 const port = 3000
 console.log(`Server is running on http://localhost:${port}`)
 
@@ -19,3 +15,7 @@ serve({
   fetch: app.fetch,
   port
 })
+
+app.use('/*', serveStatic({
+  root: './static',
+}))
