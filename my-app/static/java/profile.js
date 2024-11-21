@@ -1,35 +1,26 @@
-var gray200="#e9e9e9"
+function testadd(){
+    console.log("button activated")
 
-function buttonclick(){
-    console.log("button was clicked")
-    const button = document.querySelector('button')
-    button.addEventListener('mouseover', () => {
-        button.style.backgroundColor = gray200
-    })
+    const img = document.createElement("img")
 
-    button.addEventListener('mouseleave', () => {
-        button.style.backgroundColor = "white"
-    })
-    console.log("finished")
+    img.src = "c70b5793c38852288ff2ded36ef52fc8.jpg"
 
-    return 
+    const newlist = document.createElement("ul")
 
-    // cannot be applied to other functions
-}
+    const newli = document.createElement("li")
+    
+    const container = document.getElementById("mypins")
 
-function divclick(){
-    console.log("div was clicked")
-    const div = document.querySelector('div')
-    div.addEventListener('mouseover', () => {
-        div.style.backgroundColor = "red"
-    })
+    container.appendChild(newlist)
 
-    div.addEventListener('mouseleave', () => {
-        div.style.backgroundColor = "white"
-    })
-    console.log("finished")
+    newlist.appendChild(newli)
 
-    return 
+    newli.appendChild(img)
+
+    console.log("done")
 
 }
+
+
+
 
