@@ -1,67 +1,178 @@
-header nav ul{
+body {
+    --color-gray-roboflow-100: #f1f1f1;
+    --color-gray-roboflow-200: #e9e9e9;
+    --color-text-default: #111111;
+    font-family: "Noto Sans", sans-serif;
+    margin-top:0;
+}
+
+/* Navbar styling */
+
+#left_bar{
+    height:100%;
+    position:fixed;
+    border-right: 1px solid;
+    border-right-color:var(--color-gray-roboflow-200);
+    width:4rem;
+    margin-right:1px;
+}
+
+
+#left_bar section ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
+    right:2rem;
+    gap:2.5rem;
     list-style: none;
-    gap: 30px;
 }
 
-header {
+#left_bar section ul button{
+    height:2.8rem;
+    width:2.8rem;
+}
+
+#set
+{
+    position:relative;
+    height:2.8rem;
+    width:2.8rem;
+    top:26rem;
+    left:0.5rem;
+}
+
+#search{
+    position:fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* margin-left:0.0002rem; */
+    height:7rem;
+    width:100rem;
+    left:5.5rem;
+    right:2rem;
+    z-index:10;
+    background-color:transparent;
+    
 }
 
-h1 {
-    text-align: center;
+#left_bar button{
+    background-color:transparent;
+    border-color:transparent;
+    border-radius: 0.5rem;
+
 }
 
-main nav ul {
+#search section{
+    background-color:var(--color-gray-roboflow-100);
+    border-radius: 0.6rem;
+    width: 88%;
+    position:fixed;
+    right:7rem;
+    height:4rem;
+    margin-top:1.5rem;
+} 
+
+#search section div{
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 10px;
+    justify-content: flex-end;
+    width:8rem;
+    position:fixed;
+    left:90rem;
+    bottom:53rem;
+    border:5px solid;
+    height:3rem;
+    border-color:transparent;
 }
 
-/* Searhbar styling */
+#sub{
+    display:flex;
+    height:4rem;
+    top:1.5rem;
+    position:relative;
+    left:48rem;
+    width:7rem;
+    background-color:transparent;
+}
 
-.search {
+#pfp2i{
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    position:relative;
+    top:0.5rem;
+    border-color:var(--color-text-default);
+    background-color:transparent;
+    z-index:20;
+}
 
-    --padding: 0px 4px 0px 16px;
-
-    width: max-content;
-    display: flex;
-    align-items: center;
-    paddding: var(--paddding);
-    border-radius: 28px;
-    background: #f6f6f6;
-    transition: box-shadow 0.25s;
-    height: 48px;
-    min-width: 470px;
+#pfp2{
+    overflow:hidden;
+    width:2.8rem;
+    height:2.8rem;
+    border-radius:50%;
+    position:relative;
+    right:0.4rem;
+    bottom:0.1rem;
 
 }
 
-.search:focus-within {
-    box-shadow: 0 0 2px rgba(0,0,0,0.75);
+#sub button{
+    background-color:transparent;
+    border-color:transparent;
 }
 
-.search-input {
-    font-size: 16px;
-    font-family: 'Lexend', sans-serif;
-    color: #333333;
-    margin-left: var(--paddding);
-    outline: none;
-    border: none;
-    background: transparent;
+
+#search section input{
+    position:relative;
+    width: 81rem;
+    height:3rem;
+    border-color:transparent;
+    background-color:transparent;
+    
 }
 
-.search-input::placeholder,
-.search-icon {
-    color: rgba(0,0,0, 0.5);
+#si{
+    position:relative;
+    right:80.5rem;
+    top:0.5rem;
+    height:1.1rem;
+    width:1.1rem;
+    
+} 
+
+/* #yours{
+    width:8rem;
+    border-color:transparent;
+    background-color:transparent;
+    border-left:3px solid;
+    border-left-color:var(--color-gray-roboflow-200);
+    font-weight:600;
+    font-size:15px;
+} */
+
+#question{
+    position: fixed;
+    top: 90%;
+    right:2rem;
+    width: 200px;
+    height: 100px;
+    width:4.3rem;
+    height:4.3rem;
+    border-radius:50%;
+    margin-left:50rem;
+    background-color:white;
+    z-index:9;
+    box-shadow: 0 0 8px 4px var(--color-gray-roboflow-200);
+    border-color:transparent;
+    /* How to do shadow blur? */
 }
+
 
 /* Dropdown menu styling */
 
 .dropdown{
     display: inline-block;
+    align-item: right;
 }
 
 .dropdown button{
@@ -99,23 +210,35 @@ main nav ul {
     background-color: hsl(0, 0%, 90%);
 }
 
+/* The search field */
+#myInput {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+  
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Title of page */
+h1 {
+    text-align: center;
+}
+
 /* Profile */
 .profile {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-/* More button */
-button.button {
-    background-color: light-gray;
-    border: none;
-    padding: 5px;
-    height: 35px;
-    width: 35px;
-    box-shadow: 0 2px 4px darkslategray;
-    border-radius: 50%;
+    list-style-type: none;
 }
 
 /* Feed */
@@ -131,4 +254,6 @@ button.button {
     width: 100%;
     margin-bottom: 0px;
     opacity: 1;
+    margin-top: 50px;
+    display: inline-block;
 }

@@ -3,67 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Saved Pins</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet" type="text/css" href="css\savedpins.css">
+    <script src="java\savedpins.js"></script>
+
 </head>
 
-<body>
-    <header>
-        <nav>
+<header>
+    <nav id="left_bar">
+        <section>
             <ul>
-                <i class="fa-brands fa-pinterest"></i>
-                <li><a href = "#">Home</a></li>
-                <li><a href = "#">Explore</a></li>
-                <li><a href="#">Create</a></li> 
-            </ul>   
-        </nav>
-    
+                <li><button> <div aria-label="Home" class="oy8 zI7 iyn Hsu" style="background-size:cover;background-image:url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;30&quot; height=&quot;30&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;><path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M11.3217 0.307444C11.7345 0.0407477 12.2654 0.0407477 12.6782 0.307444L22.3616 6.56277C22.7181 6.79303 22.9334 7.1884 22.9334 7.61275V23.25H1.06653V7.61275C1.06653 7.1884 1.28181 6.79303 1.63826 6.56277L11.3217 0.307444ZM3.56653 8.2934V20.75H20.4334V8.2934L11.9999 2.84555L3.56653 8.2934Z&quot; fill=&quot;black&quot;/><path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M14.25 16.0469V20.5H14.2344V23H16.75V16.0469C16.75 13.4235 14.6234 11.2969 12 11.2969C9.37665 11.2969 7.25 13.4235 7.25 16.0469V23H9.75V20.5V20.1094V16.0469C9.75 14.8042 10.7574 13.7969 12 13.7969C13.2426 13.7969 14.25 14.8042 14.25 16.0469Z&quot; fill=&quot;black&quot;/></svg>');height:20px;width:20px"></div></button></li>
+                <li><button> <div aria-label="Explore" class="oy8 zI7 iyn Hsu" style="background-size:cover;background-image:url('data:image/svg+xml,<svg width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g clip-path=&quot;url(%23clip0_449_32453)&quot;><path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.75329 17.2467 2.5 12 2.5C6.75329 2.5 2.5 6.75329 2.5 12C2.5 17.2467 6.75329 21.5 12 21.5ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z&quot; fill=&quot;%23111111&quot;/><path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M18.3839 5.61609C18.7375 5.96967 18.8463 6.49995 18.6606 6.96423L15.7439 14.2561C15.7415 14.2624 15.739 14.2687 15.7365 14.275C15.4315 15.0368 14.8232 15.6361 14.0591 15.9306L6.94891 18.6666C6.48783 18.844 5.9655 18.7332 5.61615 18.3839C5.2668 18.0346 5.15597 17.5123 5.33336 17.0512L8.06803 9.94284C8.36219 9.17808 8.96156 8.56859 9.72491 8.26414L17.0357 5.33943C17.5 5.15369 18.0303 5.26252 18.3839 5.61609ZM13.4115 13.3556C13.4126 13.3531 13.4136 13.3505 13.4146 13.3479L15.2561 8.74398L10.6512 10.5862C10.5376 10.6315 10.4466 10.7228 10.4014 10.8402L8.67684 15.323L13.1601 13.5978C13.2734 13.5541 13.364 13.4666 13.4115 13.3556Z&quot; fill=&quot;%23111111&quot;/></g><defs><clipPath id=&quot;clip0_449_32453&quot;><rect width=&quot;24&quot; height=&quot;24&quot; fill=&quot;white&quot;/></clipPath></defs></svg>');height:20px;width:20px"></div></button></li>
+                <li><button> <div aria-label="Create" class="oy8 zI7 iyn Hsu" style="background-size:cover;background-image:url('data:image/svg+xml,<svg width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M19 3.5H5C4.17157 3.5 3.5 4.17157 3.5 5V19C3.5 19.8284 4.17157 20.5 5 20.5H19C19.8284 20.5 20.5 19.8284 20.5 19V5C20.5 4.17157 19.8284 3.5 19 3.5ZM5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5Z&quot; fill=&quot;%23111111&quot;/><path d=&quot;M13.25 7C13.25 6.30964 12.6904 5.75 12 5.75C11.3096 5.75 10.75 6.30964 10.75 7V10.75H7C6.30964 10.75 5.75 11.3096 5.75 12C5.75 12.6904 6.30964 13.25 7 13.25H10.75V17C10.75 17.6904 11.3096 18.25 12 18.25C12.6904 18.25 13.25 17.6904 13.25 17V13.25H17C17.6904 13.25 18.25 12.6904 18.25 12C18.25 11.3096 17.6904 10.75 17 10.75H13.25V7Z&quot; fill=&quot;%23111111&quot;/></svg>');height:20px;width:20px"></div></a></li>
+                <li><button> <div class="oy8 zI7 iyn Hsu" style="background-size: cover; background-image: url(&quot;data:image/svg+xml,<svg width=\&quot;20\&quot; height=\&quot;20\&quot; viewBox=\&quot;0 0 24 24\&quot; fill=\&quot;none\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;><path fill-rule=\&quot;evenodd\&quot; clip-rule=\&quot;evenodd\&quot; d=\&quot;M16.5 14.227V7C16.5 4.51471 14.4853 2.5 12 2.5C9.51471 2.5 7.5 4.51471 7.5 7V14.227L6.73561 14.9643C6.26116 15.422 5.84638 15.9379 5.5032 16.5H18.4968C18.1536 15.9379 17.7388 15.422 17.2644 14.9643L16.5 14.227ZM21.3013 16.5C21.6365 17.2867 21.8745 18.1248 22 19H2C2.12546 18.1248 2.36354 17.2867 2.69865 16.5C3.23694 15.2362 4.0256 14.1049 5 13.165V7C5 3.134 8.134 0 12 0C15.866 0 19 3.134 19 7V13.165C19.9744 14.1049 20.7631 15.2362 21.3013 16.5ZM15 20.9998H9C9 21.1702 9.01421 21.3373 9.0415 21.5C9.18134 22.3334 9.66468 23.0501 10.341 23.4998C10.8161 23.8157 11.3866 23.9998 12 23.9998C12.6134 23.9998 13.1839 23.8157 13.659 23.4998C14.3353 23.0501 14.8187 22.3334 14.9585 21.5C14.9858 21.3373 15 21.1702 15 20.9998Z\&quot; fill=\&quot;%23111111\&quot;/></svg>&quot;); height: 20px; width: 20px;"></div></button></li>
+                <li><button> <div class="oy8 zI7 iyn Hsu" style="background-size: cover; background-image: url(&quot;data:image/svg+xml,<svg width=\&quot;20\&quot; height=\&quot;20\&quot; viewBox=\&quot;0 0 24 24\&quot; fill=\&quot;none\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;><g clip-path=\&quot;url(%23clip0_800_18532)\&quot;><rect width=\&quot;24\&quot; height=\&quot;24\&quot; fill=\&quot;none\&quot;/><path d=\&quot;M4.6831 18.2737L4.84947 17.6551L4.44456 17.1588C3.07314 15.4778 2.25 13.3365 2.25 11C2.25 5.61536 6.61536 1.25 12 1.25C17.3846 1.25 21.75 5.61536 21.75 11C21.75 16.3846 17.3846 20.75 12 20.75C10.6917 20.75 9.44625 20.4881 8.30368 20.0202L7.75509 19.7956L7.23401 20.0782L3.67907 22.0065L4.6831 18.2737Z\&quot; stroke=\&quot;%23111111\&quot; stroke-width=\&quot;2.5\&quot;/><circle cx=\&quot;6.99219\&quot; cy=\&quot;11.0078\&quot; r=\&quot;1.5\&quot; fill=\&quot;%23111111\&quot;/><path d=\&quot;M13.4961 11.0078C13.4961 11.8362 12.8245 12.5078 11.9961 12.5078C11.1677 12.5078 10.4961 11.8362 10.4961 11.0078C10.4961 10.1794 11.1677 9.50781 11.9961 9.50781C12.8245 9.50781 13.4961 10.1794 13.4961 11.0078Z\&quot; fill=\&quot;%23111111\&quot;/><circle cx=\&quot;17\&quot; cy=\&quot;11.0078\&quot; r=\&quot;1.5\&quot; fill=\&quot;%23111111\&quot;/></g><defs><clipPath id=\&quot;clip0_800_18532\&quot;><rect width=\&quot;24\&quot; height=\&quot;24\&quot; fill=\&quot;white\&quot;/></clipPath></defs></svg>&quot;); height: 20px; width: 20px;"></div></button></li>
         
+            </ul>
+
+            <button id="set"><div aria-label="More options" class="oy8 zI7 iyn Hsu" style="background-size:cover;background-image:url('data:image/svg+xml,<svg width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g clip-path=&quot;url(%23clip0_449_32461)&quot;><path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M4 7.45081V16.5492L12 21.1206L20 16.5492V7.45081L12 2.87938L4 7.45081ZM12 0L1.5 6V18L12 24L22.5 18V6L12 0Z&quot; fill=&quot;%23111111&quot;/><path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM6.5 12C6.5 8.96243 8.96243 6.5 12 6.5C15.0376 6.5 17.5 8.96243 17.5 12C17.5 15.0376 15.0376 17.5 12 17.5C8.96243 17.5 6.5 15.0376 6.5 12Z&quot; fill=&quot;%23111111&quot;/></g><defs><clipPath id=&quot;clip0_449_32461&quot;><rect width=&quot;24&quot; height=&quot;24&quot; fill=&quot;white&quot;/></clipPath></defs></svg>');height:20px;width:20px"></div></button>
+        </section>
+    </nav>
+
+    <nav id="search">
+
+        <section>
+            <input type ="text">
+            <svg id="si" aria-hidden="true" aria-label="" class="BNH gUZ U9O kVc" height="20" role="img" viewBox="0 0 24 24" width="20"><path d="M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24"></path></svg>
+            <a>Search</a>
         
-        <!-- Searchbar -->
-        <form>
-            <div class="search">
-                <span class="material-symbols-outlined">search</span>
-                <input class="search-input" type="search" placeholder="Search your pins">
-            </div>
-        </form>
+            <!-- <div id="block1">
+                <button id="yours">Your Pins</button> 
+                <button id="drop1b"><svg id="drop1" aria-hidden="true" aria-label="" class="BNH gUZ U9O kVc" height="12" role="img" viewBox="0 0 24 24" width="12"><path d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0"></path></svg></button>
+            </div> -->
+
+        </section>
+
+        <div id="sub">
+            <button id="pfp2i"><img id="pfp2" src = "assets\pfp.png" alt="user pfp"/><a href="profile.html"></a></button>
+            <button><svg id="drop2" aria-hidden="true" aria-label="" class="BNH gUZ U9O kVc" height="12" role="img" viewBox="0 0 24 24" width="12"><path d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0"></path></svg></button>
+        </div>
 
         <!-- Dropdown -->
         <div class="dropdown">
-            <button>Filter</button>
-        <div class="content">
-            <a href = "">All Pins</a>
-            <a href= "">Your Pins</a>
+            <button onClick="myfunction()">Filter</button>
+        <div id="mydropdown" class="content">
+            <id="myInput" onkeyup="filterfunction()">
+            <a href = "#">All Pins</a>
+            <a href= "#">Your Pins</a>
         </div>
         </div>
-    
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fa-duotone fa-solid fa-bell"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
-                <li><a href="#"><img src="assets\pfp.png" alt="Your Profile" class="profile"></a></li>
-            </ul>
-        </nav>
-    </header>
 
+    </nav>
+</header>
+
+<button id="question"> <svg aria-hidden="true" aria-label="" class="Uvi gUZ U9O kVc" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M14.5 21.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m4.25-14.75a6.7 6.7 0 0 1-3.26 5.78c-.46.26-1.14 1.33-1.14 2.34a2.35 2.35 0 1 1-4.7 0c0-2.55 1.47-5.25 3.5-6.41.45-.26.9-.93.9-1.71a2.06 2.06 0 0 0-4.1 0 2.35 2.35 0 1 1-4.7 0 6.76 6.76 0 0 1 13.5 0"></path></svg></button>
+
+<body>
     <main>
+        <!-- <nav>
+            <ul>
+                <li><a href=""><img src="assets\pfp.png" alt="Your Profile" class="profile"></a></li>
+            </ul>
+        </nav> -->
+
         <h1>All Pins</h1>
 
         <!-- Content of Saved Pins -->
-         <article id="feed">
-            <a href ="" target="_blank"><img src="images\d1846c0f052578b326b224006d7b4f3e.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 106.356%; width: 236px; height: 265px"></a>
-            <a href="" target="_blank"><img src="images\Death Is Easy, Life Is Hard - 24~ I'm Here.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 102.542%; width: 236px; height: 242px"></a>
-            <a href="" target="_blank"><img src="images\The Best Memes About 2020.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 102.452%; width: 236px; height: 290px"></a>
-            <a href="" target="_blank"><img src="images\Why is this so relatable.jpg" fetchpriority="auto" loading="auto" style="width: 236px; height: 235px; padding-bottom: 99.5763%"></a>
-            <a href="" target="_blank"><img src="images\186e6bf3d8c8f85bdad7c18928826f43.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 106.356%; width: 236px; height: 251px"></a>
-         </article>
-    
-        <!-- More button -->
-        <button class="button">
-            <i class="fa-solid fa-question"></i>
-        </button>
+        <div id="feed">
+            <a href="pin page\index.html" target="_blank"><img src="pin page\images\pinterest-pin.jpg" fetchpriority="auto" loading="auto" style="padding-bottom: 106.356%; width: 236px; height: 251px"></a>
+        </div>
     </main>
 </body>
 </html>
