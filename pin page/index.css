@@ -70,7 +70,7 @@ img.logo {
 
 
 
-  
+
   /* Main Container */
   .container {
     display: flex;
@@ -85,11 +85,12 @@ img.logo {
   .pin-image-section {
     flex: 2;
     position: relative;
+
   }
   
   .pin-image {
-    margin-left: 10rem;
-    width: 75%;
+    margin-left: 9rem;
+    width: 80%;
     border-radius: 8px;
   }
   
@@ -104,8 +105,10 @@ img.logo {
   
   /* Pin Info Section */
   .pin-info-section {
+    margin-right: 5rem;
     flex: 1;
     padding: 20px;
+
     
   }
   
@@ -148,6 +151,20 @@ img.logo {
     cursor: pointer;
   }
    */
+
+
+
+    img.notifs-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50rem;
+    }
+    
+   body h2 {
+    margin-top: 5rem;
+   }
+
+
   /* Shop the Look */
   .shop-the-look {
     display: flex;
@@ -158,6 +175,7 @@ img.logo {
   .shop-the-look .item {
     width: 60px;
     text-align: center;
+    
   }
   
   .shop-the-look img {
