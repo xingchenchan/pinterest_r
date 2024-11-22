@@ -166,6 +166,13 @@ body {
     /* How to do shadow blur? */
 }
 
+#search section a {
+    position: relative;
+    top: 0.5rem;
+    right: 80rem;
+    font-size: 17px;
+}
+
 
 /* Dropdown menu styling */
 
