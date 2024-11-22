@@ -230,6 +230,7 @@ body {
 /* Title of page */
 h1 {
     text-align: center;
+    padding-top: 10rem;
 }
 
 /* Profile */
@@ -242,6 +243,17 @@ h1 {
 }
 
 /* Feed */
+
+#feed {
+    width: 33px;
+    background-color: transparent;
+    position: relative;
+    align-items: left;
+    width: 90%;
+    left: 10rem;
+    right: 10rem;
+    margin-top: 0px;
+}
 
 #feed img{
     border-radius: 30px;
@@ -256,4 +268,23 @@ h1 {
     opacity: 1;
     margin-top: 50px;
     display: inline-block;
+}
+
+/* Title */
+.title {
+    top: 80px;
+    z-index: 1;
+}
+
+.stancom {
+    display: block;
+    box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    
+}
+
+.create {
+
 }
