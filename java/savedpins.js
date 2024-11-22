@@ -1,3 +1,6 @@
+import {serve} from '@hono/node-server'
+import {Hono} from 'hono'
+
 /* Image Specific Function */
 
 function pinclick() {

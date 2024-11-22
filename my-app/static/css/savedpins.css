@@ -48,7 +48,7 @@ body {
     /* margin-left:0.0002rem; */
     height:7rem;
     width:100rem;
-    left:5.5rem;
+    left:0rem;
     right:2rem;
     z-index:10;
     background-color:transparent;
@@ -113,7 +113,6 @@ body {
     position:relative;
     right:0.4rem;
     bottom:0.1rem;
-
 }
 
 #sub button{
@@ -140,7 +139,7 @@ body {
     
 } 
 
-/* #yours{
+#yours{
     width:8rem;
     border-color:transparent;
     background-color:transparent;
@@ -148,7 +147,7 @@ body {
     border-left-color:var(--color-gray-roboflow-200);
     font-weight:600;
     font-size:15px;
-} */
+}
 
 #question{
     position: fixed;
@@ -234,13 +233,13 @@ h1 {
 }
 
 /* Profile */
-.profile {
+/* .profile {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     list-style-type: none;
-}
+} */
 
 /* Feed */
 
@@ -271,9 +270,19 @@ h1 {
 }
 
 /* Title */
-.title {
+.actionbar {
+    display: block;
     top: 80px;
     z-index: 1;
+    width: 100%;
+    align-items: center;
+}
+
+.view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .stancom {
@@ -282,9 +291,14 @@ h1 {
     border: 0;
     background-color: transparent;
     padding: 0;
-    
+    margin-left: 1500px;
 }
 
 .create {
-
+    display: block;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: transparent;
+    justify-content: space-between;
+    border: 0;
 }
