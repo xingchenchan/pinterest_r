@@ -54,7 +54,7 @@ img.logo {
   }
 
   .nav-icons ul{
-     display: flex;
+    display: flex;
     list-style: none;
     gap: 16px;
   }
