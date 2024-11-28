@@ -31,3 +31,8 @@ function filterFunction() {
         }
     }
 }
+
+function setCookies(){
+    document.cookie = "ok";
+    return ;
+}
