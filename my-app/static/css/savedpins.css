@@ -48,7 +48,7 @@ body {
     /* margin-left:0.0002rem; */
     height:7rem;
     width:100rem;
-    left:5.5rem;
+    left:0rem;
     right:2rem;
     z-index:10;
     background-color:transparent;
@@ -113,7 +113,6 @@ body {
     position:relative;
     right:0.4rem;
     bottom:0.1rem;
-
 }
 
 #sub button{
@@ -140,7 +139,7 @@ body {
     
 } 
 
-/* #yours{
+#yours{
     width:8rem;
     border-color:transparent;
     background-color:transparent;
@@ -148,7 +147,7 @@ body {
     border-left-color:var(--color-gray-roboflow-200);
     font-weight:600;
     font-size:15px;
-} */
+}
 
 #question{
     position: fixed;
@@ -165,6 +164,13 @@ body {
     box-shadow: 0 0 8px 4px var(--color-gray-roboflow-200);
     border-color:transparent;
     /* How to do shadow blur? */
+}
+
+#search section a {
+    position: relative;
+    top: 0.5rem;
+    right: 80rem;
+    font-size: 17px;
 }
 
 
@@ -230,18 +236,30 @@ body {
 /* Title of page */
 h1 {
     text-align: center;
+    padding-top: 10rem;
 }
 
 /* Profile */
-.profile {
+/* .profile {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     list-style-type: none;
-}
+} */
 
 /* Feed */
+
+#feed {
+    width: 33px;
+    background-color: transparent;
+    position: relative;
+    align-items: left;
+    width: 90%;
+    left: 10rem;
+    right: 10rem;
+    margin-top: 0px;
+}
 
 #feed img{
     border-radius: 30px;
@@ -256,4 +274,38 @@ h1 {
     opacity: 1;
     margin-top: 50px;
     display: inline-block;
+}
+
+/* Title */
+.actionbar {
+    display: block;
+    top: 80px;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+}
+
+.view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.stancom {
+    display: block;
+    box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    margin-left: 1500px;
+}
+
+.create {
+    display: block;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: transparent;
+    justify-content: space-between;
+    border: 0;
 }

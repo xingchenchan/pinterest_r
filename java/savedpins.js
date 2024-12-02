@@ -1,3 +1,6 @@
+import {serve} from '@hono/node-server'
+import {Hono} from 'hono'
+
 /* Image Specific Function */
 
 function pinclick() {
@@ -27,4 +30,9 @@ function filterFunction() {
         a[i].style.display = "none";
         }
     }
+}
+
+function setCookies(){
+    document.cookie = "ok";
+    return ;
 }
