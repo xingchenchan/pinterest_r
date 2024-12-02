@@ -129,12 +129,12 @@ body {
     position:relative;
     right:0.4rem;
     bottom:0.1rem;
-
 }
 
 #sub button{
     background-color:transparent;
     border-color:transparent;
+    align-items: right;
 }
 
 
