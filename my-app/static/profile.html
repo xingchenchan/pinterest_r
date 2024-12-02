@@ -90,8 +90,13 @@
         <button id="plus"><svg aria-hidden="true" aria-label="" class="Uvi gUZ U9O kVc" height="20" role="img" viewBox="0 0 24 24" width="20"><path d="M22 10h-8V2a2 2 0 0 0-4 0v8H2a2 2 0 0 0 0 4h8v8a2 2 0 0 0 4 0v-8h8a2 2 0 0 0 0-4"></path></svg></button>
 
         <a id="cover">
-            aaaa
-        </a>    
+            <ul>
+                <li><img id="cover1" src = "images/4d271ec40782410896a6cc08bf9103dc.jpg" /></li>
+                <li><img id="cover2" src = "images/7d99a4b64e0c6b96bd6d9830dcffae43.jpg" /></li>
+                <li><img id="cover3" src = "images/056c11cab2e4ef6bc69a6e66fad90622.jpg" /></li>
+
+            </ul>
+        </a>  
 
         <div>
             <p id="mysaves">My Saves</p>
@@ -108,25 +113,25 @@
     </section>
 
     <div id="mypins">
-        <ul>
+        <ul id="mypinslist">
             <li><img src = "images/4d271ec40782410896a6cc08bf9103dc.jpg" /></li>
             <li><img src = "images/7d99a4b64e0c6b96bd6d9830dcffae43.jpg" /></li>
             <li><img src = "images/056c11cab2e4ef6bc69a6e66fad90622.jpg" /></li>
             <li><img src = "images/426a98220dd347b61368f1d99d9f77b5.jpg" /></li>
             <li><img src = "images/434eff90834a6155b5e05a83b3f70b5e.jpg" /></li>
             <li><script>
-                function checkCookies(){
                     console.log("check") 
                     let v = document.cookie 
                     if(v != null){
-        
-                        const o = document.createElement("img") 
-                        o.src="images/d1846c0f052578b326b224006d7b4f3e.jpg" 
-                        console.log(o.src) 
-                        document.body.appendChild(o) 
+
+                        const o = document.createElement("li")
+                        const p = document.createElement("img") 
+                        p.src="images/d1846c0f052578b326b224006d7b4f3e.jpg" 
+                        o.appendChild(p)
+                        const location = document.getElementById("mypinslist")
+                        location.appendChild(o) 
         
                     }
-                }
             </script></li>
         </ul>
     </div>
