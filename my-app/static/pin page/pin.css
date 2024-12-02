@@ -1,4 +1,203 @@
+body{
+  --color-gray-roboflow-100: #f1f1f1;
+  --color-gray-roboflow-200: #e9e9e9;
+  --color-text-default: #111111;
+  font-family: "Noto Sans", sans-serif;
+  margin-top:0;
+  
+}
+#left_bar{
+  height:100%;
+  position:fixed;
+  border-right: 1px solid;
+  border-right-color:var(--color-gray-roboflow-200);
+  width:4rem;
+  margin-right:1px;
+  
+}
 
+
+#left_bar section ul{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right:2rem;
+  gap:2.5rem;
+  list-style: none;
+  
+}
+
+#left_bar section ul button{
+  height:2.8rem;
+  width:2.8rem;
+  background-color: transparent;
+  border: transparent;
+}
+
+#set
+{
+  position:relative;
+  height:2.8rem;
+  width:2.8rem;
+  top:26rem;
+  left:0.5rem;
+}
+
+#search{
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  /* margin-left:0.0002rem; */
+  height:7rem;
+  width:100rem;
+  left:5.5rem;
+  right:2rem;
+  z-index:10;
+  background-color:white;
+  
+}
+
+
+
+#search section{
+  background-color:var(--color-gray-roboflow-100);
+  border-radius: 0.6rem;
+  width: 88%;
+  position:fixed;
+  right:7rem;
+  height:4rem;
+  margin-top:1.5rem;
+
+
+} 
+
+#search section div{
+  display: flex;
+  justify-content: flex-end;
+  width:8rem;
+  position:fixed;
+  left:90rem;
+  bottom:53rem;
+  border:5px solid;
+  height:3rem;
+  border-color:transparent;
+}
+
+
+
+#sub{
+  display:flex;
+  height:4rem;
+  top:1.5rem;
+  position:relative;
+  left:48rem;
+  width:7rem;
+  background-color:transparent;
+}
+
+#pfp2i{
+  width:3rem;
+  height:3rem;
+  border-radius:50%;
+  position:relative;
+  top:0.5rem;
+  border-color:var(--color-text-default);
+  background-color:transparent;
+  z-index:20;
+}
+
+#pfp2{
+  overflow:hidden;
+  width:2.8rem;
+  height:2.8rem;
+  border-radius:50%;
+  position:relative;
+  right:0.4rem;
+  bottom:0.1rem;
+
+}
+
+#sub button{
+  background-color:transparent;
+  border-color:transparent;
+}
+
+
+#search section input{
+  position:relative;
+  width: 81rem;
+  height:3rem;
+  border-color:transparent;
+  background-color:transparent;
+  
+}
+
+
+
+#si{
+  position:relative;
+  right:80.5rem;
+  top:0.5rem;
+  height:1.1rem;
+  width:1.1rem;
+  
+} 
+
+#drop2{
+  position:relative;
+
+}
+
+#search section a{
+  position: relative;
+  top:0.5rem;
+  right:80rem;
+  font-size:17px;
+} 
+
+
+
+#yours{
+  width:8rem;
+  border-color:transparent;
+  background-color:transparent;
+  border-left:3px solid;
+  border-left-color:var(--color-gray-roboflow-200);
+  font-weight:600;
+  font-size:15px;
+}
+
+
+
+#drop1b{
+  border-color:transparent;
+  background-color:transparent;
+  position:relative;
+  right:1rem;
+}
+
+
+
+#question{
+  position: fixed;
+  top: 90%;
+  right:2rem;
+  width: 200px;
+  height: 100px;
+  width:4.3rem;
+  height:4.3rem;
+  border-radius:50%;
+  margin-left:50rem;
+  background-color:white;
+  z-index:9;
+  box-shadow: 0 0 8px 4px var(--color-gray-roboflow-200);
+  border-color:transparent;
+  /* How to do shadow blur? */
+}
+
+
+
+/* 
 header input {
     align-self: center;
     width: 50rem;
@@ -26,7 +225,7 @@ img.logo {
   }
   
   /* Navbar */
-  .navbar {
+  /* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +265,7 @@ img.logo {
     border: 1px solid #ccc;
     
   }
-  
+   */ */
 
 
 
@@ -74,7 +273,7 @@ img.logo {
   /* Main Container */
   .container {
     display: flex;
-    justify-content: center;
+
     margin-top: 20px;
     padding: 20px;
     max-width: 1200px;
@@ -83,17 +282,20 @@ img.logo {
   
   /* Pin Image Section */
   .pin-image-section {
-    flex: 2;
-    position: relative;
+
+    position: absolute;
 
   }
   
   .pin-image {
-    margin-left: 9rem;
-    width: 80%;
+    margin-left: 20%;
+    width: 30%;
     border-radius: 8px;
   }
   
+
+
+
   /* .pin-icons {
     position: absolute;
     bottom: 10px;
@@ -151,6 +353,7 @@ img.logo {
     cursor: pointer;
   }
    */
+
 
 
 
@@ -292,4 +495,6 @@ img.logo {
     color: #333;
     font-weight: bold;
   }
+
+
   
