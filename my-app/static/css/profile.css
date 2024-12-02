@@ -363,12 +363,59 @@ header ul button{
     position:relative;
     bottom: 1rem;
     right: 3rem;
-    background-color:grey;
     height:13rem;
     width:20rem;
-    border-radius:1rem;
+    border-radius:2rem;
     margin-left:-4rem;
     margin-top: 5rem;
+}
+
+#cover ul {
+    display: flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+    margin-top:0;
+    margin-bottom:0;
+    border-radius:1rem;
+}
+
+#cover li {
+    flex-grow: 1;
+    border-color:white;
+    border-width:2px;
+}
+
+#cover1{
+    height:30%;
+    object-fit: cover;
+    overflow:hidden;
+    position:relative;
+    right:3rem;
+    /* z-index:8; */
+}
+
+#cover2{
+    height:20%;
+    object-fit: cover;
+    overflow:hidden;
+    position:relative;
+    bottom:58rem;
+    left:10rem;
+    border-radius:2rem;
+
+
+}
+
+#cover3{
+    height:25%;
+    object-fit: cover;
+    border-right: 5px white;
+    overflow:hidden;
+    position:relative;
+    bottom:114rem;
+    left:10rem;
+    /* z-index:6; */
+
 }
 
 #saves div{
@@ -419,7 +466,6 @@ header ul button{
 
 #mypins{
     display:flex;
-    background-color:red;
     width:95%;
     position:relative;
     top:1rem;
