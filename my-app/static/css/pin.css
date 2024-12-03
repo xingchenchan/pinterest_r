@@ -39,11 +39,13 @@ body{
   position:relative;
   height:2.8rem;
   width:2.8rem;
-  top:26rem;
+  top:16rem;
   left:0.5rem;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-search{
+#search{
   position:fixed;
   display: flex;
   justify-content: center;
@@ -52,7 +54,7 @@ search{
   width:100rem;
   left:5.5rem;
   right:2rem;
-  z-index:10;
+  z-index:15;
   background-color:white;
   
 }
@@ -60,7 +62,7 @@ search{
 
 
 #search section{
-  background-color:lightgrey;
+  background-color:var(--color-gray-roboflow-100);
   border-radius: 0.6rem;
   width: 88%;
   position:fixed;
@@ -81,7 +83,6 @@ search{
   bottom:53.3rem;
   height:3rem;
   border-left: 1px black;
-  background-color:yellow;
 }
 
 
@@ -89,14 +90,14 @@ search{
 #sub{
   display: flex;
   height:4rem;
+  right: 16rem;
   position:absolute;
-  left: 94.5%;
-  top: 1rem;
-  /* left:95rem;
-  bottom:1.5rem; */
+  margin-top: 20rem;
+  bottom:1.75rem; 
   background-color:transparent;
   overflow:auto;
   background-color:transparent;
+  z-index:30;
 }
 
 #pfp2i{
@@ -107,7 +108,7 @@ search{
   top:0.5rem;
   border-color:var(--color-text-default);
   background-color:transparent;
-  z-index:20;
+  z-index:25;
 }
 
 #pfp2{
@@ -155,9 +156,10 @@ search{
 
 #yours, #drop1b{
   position:absolute;
-  background-color:red;
-  top:0.5rem;
+  background-color:transparent;
+  top: 11rem;
   height:3rem;
+  right: 13rem;
   overflow:auto;
   
 
@@ -212,6 +214,7 @@ search{
     max-width: 300px; /* Optional: Restrict the maximum size */
     height: auto; /* Maintain aspect ratio */
     border-radius: 20rem; /* Keep the border styling */
+    z-index: 1;
   }
    
 
@@ -230,8 +233,8 @@ search{
   .pin-info-section {
     display: flex;
     flex-direction: column;
-    margin-left: 48%;
-    padding: 10rem;
+    margin-left: 49%;
+    padding: 8rem;
     width: 27rem; /* Matches width to the provided image */
     height: auto;
     
@@ -300,11 +303,15 @@ search{
   .save-button {
     background-color: #E60023;
     color: white;
+    border-color: transparent;
     padding: 5px 15px;
+    height: 2rem;
+    width: 4rem;
     border-radius: 20px;
     margin-left: auto;
     cursor: pointer;
     font-weight: bold;
+    transform: scale(1.25);
     
   }
   
