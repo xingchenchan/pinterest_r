@@ -89,9 +89,9 @@ body {
     background-color:transparent;
     overflow:auto;
     background-color:transparent;
-    flex-direction: right;
-    margin-left:80rem;
-    top:3rem;
+    margin-left:81rem;
+    top:3.5rem;
+    margin-top:1.5rem;
 }
 
 #pfp2i{
@@ -145,23 +145,25 @@ body {
 #yours, #drop1b{
     position:absolute;
     background-color:transparent;
-    top:4rem;
-    height:100%;
+    height:3rem;
+    top:4.5rem;
+    /* height:70%; */
     overflow:auto;
     cursor: pointer;
     unicode-bidi: isolate;
-    display: flex;
-    flex-direction: row;
     left:76rem;
 }
 
 #yours{
+    position:absolute;
+    height:100%;
     width:8rem;
     border-color:transparent;
     border-left:3px solid !important;
     border-left-color:var(--color-gray-roboflow-200) !important;
     font-weight:600;
     font-size:15px;
+    background-color:transparent;
 }
 
 #drop1b{
