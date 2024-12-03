@@ -6,7 +6,7 @@ body {
     margin-top:0;
 }
 
-/* Navbar styling */
+/* Left Navbar styling */
 
 #left_bar{
     height:100%;
@@ -43,6 +43,7 @@ body {
     left:0.5rem;
 }
 
+/* Searchbar Styling */
 #search{
     position:fixed;
     display: flex;
@@ -54,24 +55,8 @@ body {
     right:2rem;
     z-index:10;
     background-color:white;
-    
-}
+    top:0rem;
 
-#question{
-    position: fixed;
-    top: 90%;
-    right:2rem;
-    width: 200px;
-    height: 100px;
-    width:4.3rem;
-    height:4.3rem;
-    border-radius:50%;
-    margin-left:50rem;
-    background-color:white;
-    z-index:9;
-    box-shadow: 0 0 8px 4px var(--color-gray-roboflow-200);
-    border-color:transparent;
-    /* How to do shadow blur? */
 }
 
 #search section{
@@ -82,32 +67,31 @@ body {
     right:7rem;
     height:4rem;
     margin-top:1.5rem;
-
-
+    overflow:auto;
 } 
 
 #search section div{
     display: flex;
     justify-content: flex-end;
-    width:8rem;
+    width:5rem;
     position:fixed;
-    left:90rem;
-    bottom:53rem;
-    border:5px solid;
+    left:4rem;
+    bottom:53.3rem;
     height:3rem;
-    border-color:transparent;
+    border-left: 1px black;
+    background-color:transparent;
 }
-
-
 
 #sub{
     display:flex;
     height:4rem;
-    top:1.5rem;
-    position:downright;
-    left:48rem;
-    width:7rem;
+    bottom:1.5rem;
     background-color:transparent;
+    overflow:auto;
+    background-color:transparent;
+    margin-left:81rem;
+    top:3.5rem;
+    margin-top:1.5rem;
 }
 
 #pfp2i{
@@ -126,10 +110,9 @@ body {
     width:2.8rem;
     height:2.8rem;
     border-radius:50%;
-    position:relative;
-    right:0.4rem;
-    bottom:0.1rem;
-
+    position:absolute;
+    top:0.1rem;
+    left:0.2rem;
 }
 
 #sub button{
@@ -137,69 +120,87 @@ body {
     border-color:transparent;
 }
 
-
 #search section input{
-    position:relative;
     width: 81rem;
     height:3rem;
     border-color:transparent;
     background-color:transparent;
-    
 }
-
-
 
 #si{
-    position:relative;
-    right:80.5rem;
-    top:0.5rem;
+    position:absolute;
+    left:1.2rem;
+    top:1.5rem;
     height:1.1rem;
     width:1.1rem;
-    
 } 
-
-#drop2{
-    position:relative;
-
-}
 
 #search section a{
-    position: relative;
-    top:0.5rem;
-    right:80rem;
-    font-size:17px;
+    position: absolute;
+    left:3rem;
+    bottom:1.3rem;
+    font-size:19px;
 } 
 
-
-
-#yours{
-    width:8rem;
-    border-color:transparent;
+#yours, #drop1b{
+    position:absolute;
     background-color:transparent;
-    border-left:3px solid;
-    border-left-color:var(--color-gray-roboflow-200);
-    font-weight:600;
-    font-size:15px;
-    position: down;
+    height:3rem;
+    top:4.5rem;
+    /* height:70%; */
+    overflow:auto;
+    cursor: pointer;
+    unicode-bidi: isolate;
+    left:76rem;
 }
 
-
+#yours{
+    position:absolute;
+    height:100%;
+    width:8rem;
+    border-color:transparent;
+    border-left:3px solid !important;
+    border-left-color:var(--color-gray-roboflow-200) !important;
+    font-weight:600;
+    font-size:15px;
+    background-color:transparent;
+}
 
 #drop1b{
     border-color:transparent;
     background-color:transparent;
-    right:1rem;
+    margin-left:10rem;
+}
+
+/* Question button styling */
+
+#question{
+    position: fixed;
+    top: 90%;
+    right:2rem;
+    width: 200px;
+    height: 100px;
+    width:4.3rem;
+    height:4.3rem;
+    border-radius:50%;
+    margin-left:50rem;
+    background-color:white;
+    z-index:9;
+    box-shadow: 0 0 8px 4px var(--color-gray-roboflow-200);
+    border-color:transparent;
+    /* How to do shadow blur? */
+    box-shadow: 10px 10px hsl(0, 0%, 70%);
 }
 
 /* Dropdown menu styling */
 
-.dropdown{
+/* #block1{
     display: inline-block;
     align-item: right;
     position: relative;
 }
 
-.dropdown button{
+#block1 button{
     background-color: transparent;
     color: black;
     padding: 10px 15px;
@@ -207,14 +208,14 @@ body {
     cursor: pointer;
 }
 
-.dropdown a{
+#block1 a{
     display: block;
     color: black;
     text-decoration: none;
     padding: 10px 15px;
 }
 
-.dropdown .content{
+#dropdown .content{
     display: none;
     position: absolute;
     background-color: hsl(0, 0%, 95%);
@@ -222,17 +223,17 @@ body {
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
 
-.dropdown:hover .content{
+#dropdown:hover .content{
     display: block;
 }
 
-.dropdown:hover button{
+#dropdown:hover button{
     background-color: hsl(0, 0%, 70%);
 }
 
 .dropdown a:hover{
     background-color: hsl(0, 0%, 90%);
-}
+} */
 
 /* The search field */
 #myInput {
@@ -274,7 +275,7 @@ h1 {
     position: relative;
     align-items: left;
     width: 90%;
-    left: 10rem;
+    left: 2rem;
     right: 10rem;
     margin-top: 0px;
 }
