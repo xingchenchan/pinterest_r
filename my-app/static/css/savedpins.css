@@ -60,7 +60,7 @@ body {
 }
 
 #search section{
-    background-color:var(--color-gray-roboflow-200);
+    background-color:var(--color-gray-roboflow-100);
     border-radius: 0.6rem;
     width: 88%;
     position:fixed;
@@ -158,8 +158,8 @@ body {
 #yours{
     width:8rem;
     border-color:transparent;
-    border-left:3px solid;
-    border-left-color:var(--color-gray-roboflow-200);
+    border-left:3px solid !important;
+    border-left-color:var(--color-gray-roboflow-200) !important;
     font-weight:600;
     font-size:15px;
 }
@@ -192,13 +192,13 @@ body {
 
 /* Dropdown menu styling */
 
-.dropdown{
+/* #block1{
     display: inline-block;
     align-item: right;
     position: relative;
 }
 
-.dropdown button{
+#block1 button{
     background-color: transparent;
     color: black;
     padding: 10px 15px;
@@ -206,14 +206,14 @@ body {
     cursor: pointer;
 }
 
-.dropdown a{
+#block1 a{
     display: block;
     color: black;
     text-decoration: none;
     padding: 10px 15px;
 }
 
-.dropdown .content{
+#dropdown .content{
     display: none;
     position: absolute;
     background-color: hsl(0, 0%, 95%);
@@ -221,17 +221,17 @@ body {
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
 
-.dropdown:hover .content{
+#dropdown:hover .content{
     display: block;
 }
 
-.dropdown:hover button{
+#dropdown:hover button{
     background-color: hsl(0, 0%, 70%);
 }
 
 .dropdown a:hover{
     background-color: hsl(0, 0%, 90%);
-}
+} */
 
 /* The search field */
 #myInput {
