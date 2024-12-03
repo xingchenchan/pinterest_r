@@ -58,7 +58,7 @@ body {
 }
 
 #search section{
-    background-color:transparent;
+    background-color:var(--color-gray-roboflow-200);
     border-radius: 0.6rem;
     width: 88%;
     position:fixed;
@@ -71,13 +71,13 @@ body {
 #search section div{
     display: flex;
     justify-content: flex-end;
-    width:8rem;
+    width:5rem;
     position:fixed;
-    left:91rem;
+    left:4rem;
     bottom:53.3rem;
     height:3rem;
     border-left: 1px black;
-    background-color:yellow;
+    background-color:transparent;
 }
 
 #sub{
@@ -143,8 +143,10 @@ body {
     position:absolute;
     background-color:red;
     top:0.5rem;
-    height:3rem;
-    overflow:auto;  
+    height:100%;
+    overflow:auto;
+    cursor: pointer;
+    unicode-bidi: isolate;
 }
 
 #yours{
@@ -154,6 +156,9 @@ body {
     border-left-color:var(--color-gray-roboflow-200);
     font-weight:600;
     font-size:15px;
+    display: flex;
+    display: flex;
+    flex-direction: row;
 }
 
 #drop1b{
@@ -178,6 +183,7 @@ body {
     box-shadow: 0 0 8px 4px var(--color-gray-roboflow-200);
     border-color:transparent;
     /* How to do shadow blur? */
+    box-shadow: 10px 10px hsl(0, 0%, 70%);
 }
 
 /* Dropdown menu styling */
@@ -263,7 +269,7 @@ h1 {
     position: relative;
     align-items: left;
     width: 90%;
-    left: 10rem;
+    left: 2rem;
     right: 10rem;
     margin-top: 0px;
 }
