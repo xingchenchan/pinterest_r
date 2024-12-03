@@ -55,6 +55,8 @@ body {
     right:2rem;
     z-index:10;
     background-color:white;
+    top:0rem;
+
 }
 
 #search section{
@@ -89,6 +91,7 @@ body {
     background-color:transparent;
     flex-direction: right;
     margin-left:80rem;
+    top:3rem;
 }
 
 #pfp2i{
@@ -141,12 +144,15 @@ body {
 
 #yours, #drop1b{
     position:absolute;
-    background-color:red;
-    top:0.5rem;
+    background-color:transparent;
+    top:4rem;
     height:100%;
     overflow:auto;
     cursor: pointer;
     unicode-bidi: isolate;
+    display: flex;
+    flex-direction: row;
+    left:76rem;
 }
 
 #yours{
@@ -156,14 +162,12 @@ body {
     border-left-color:var(--color-gray-roboflow-200);
     font-weight:600;
     font-size:15px;
-    display: flex;
-    display: flex;
-    flex-direction: row;
 }
 
 #drop1b{
     border-color:transparent;
     background-color:transparent;
+    margin-left:10rem;
 }
 
 /* Question button styling */
