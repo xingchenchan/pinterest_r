@@ -216,7 +216,10 @@ body{
     border-radius: 20rem; /* Keep the border styling */
     z-index: 1;
   }
-   
+  
+  #realimage{
+    border-radius:2rem;
+  }
 
 
 

@@ -87,27 +87,27 @@
 
         <!-- Content of Saved Pins -->
         <div id="feed">
-            <ul>
-            <li><a href="pin page\index.html" target="_blank"><img src="pin page\images\pinterest-pin.jpg" fetchpriority="auto" loading="auto"></a></li>
+            <ul id="mypinslist">
             <li><img src = "images/4d271ec40782410896a6cc08bf9103dc.jpg" fetchpriority="auto" loading="auto"/></li>
             <li><img src = "images/7d99a4b64e0c6b96bd6d9830dcffae43.jpg" fetchpriority="auto" loading="auto"/></li>
             <li><img src = "images/056c11cab2e4ef6bc69a6e66fad90622.jpg" fetchpriority="auto" loading="auto"/></li>
             <li><img src = "images/426a98220dd347b61368f1d99d9f77b5.jpg"  fetchpriority="auto" loading="auto"/></li>
             <li><img src = "images/434eff90834a6155b5e05a83b3f70b5e.jpg"  fetchpriority="auto" loading="auto"/></li>
             </ul>
-            <li><script>
-                    console.log("check") 
-                    let v = document.cookie 
-                    if(v != null){
+            <script>
+                console.log("check") 
+                let v = document.cookie 
+                if(v != null){
 
-                        const o = document.createElement("li")
-                        const p = document.createElement("img") 
-                        p.src="images/d1846c0f052578b326b224006d7b4f3e.jpg" 
-                        o.appendChild(p)
-                        const location = document.getElementById("mypinslist")
-                        location.appendChild(o) 
-                    }
-            </script></li>
+                    const o = document.createElement("li")
+                    const p = document.createElement("img") 
+                    p.src="images/pinterest-pin.jpg" 
+                    o.appendChild(p)
+                    const location = document.getElementById("mypinslist")
+                    location.appendChild(o) 
+                }
+        </script>
+
         </div>
     </main>
 </body>
