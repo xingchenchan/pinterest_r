@@ -122,15 +122,16 @@
             <li><script>
                     console.log("check") 
                     let v = document.cookie 
-                    if(v != null){
-
+                    if(v != ''){
                         const o = document.createElement("li")
+                        const a = document.createElement("a")
                         const p = document.createElement("img") 
                         p.src="images/pinterest-pin.jpg" 
-                        o.appendChild(p)
+                        a.href="index.html"
+                        a.appendChild(p)
+                        o.appendChild(a)
                         const location = document.getElementById("mypinslist")
                         location.appendChild(o) 
-        
                     }
             </script></li>
         </ul>
